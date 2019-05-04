@@ -26,7 +26,7 @@ app.post("/createPdf", (req, res) => {
     }).catch((error) => {
         console.log("API ERROR", error)
         res.status(500).json({
-            status: "SUCCESS",
+            status: "FAILED",
             data: error
         })
     })
