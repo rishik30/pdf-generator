@@ -2,6 +2,9 @@ const express = require("express")
 const cors = require("cors")
 const bodyParser = require("body-parser")
 
+//load env variables
+require("dotenv").config()
+
 import PdfController from "./controller/pdfController"
 
 const PORT = 3000
